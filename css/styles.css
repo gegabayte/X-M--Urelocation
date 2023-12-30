@@ -6,7 +6,6 @@
 
 body {
   font-family: Alegreya;
-  background-color: aqua;
 }
 
 .container {
@@ -219,6 +218,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0px 340px 93px 340px;
+  justify-content: center;
 }
 .sidebar__container h2 {
   display: flex;
@@ -604,6 +604,56 @@ body {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 1690px) {
+  .container {
+    max-width: 1590px;
+  }
+  .dable__block {
+    max-width: 1590px;
+    padding: 79.53px 100px 65px 100px;
+  }
+  .sidebar__container {
+    padding: 0px 100px 93px 200px;
+  }
+  .sidebar__container .sidebar__container {
+    gap: 40px;
+  }
+  .content__container {
+    padding: 0px 100px 81px;
+  }
+  .footer__container {
+    padding: 63px 100px 0px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .container {
+    max-width: 1440px;
+  }
+  .dable__block {
+    padding: 79.53px 80px 65px 80px;
+    max-width: 1440px;
+  }
+  .dable__block .hero__container {
+    padding: 81px 80px 65px 50px;
+  }
+  .dable__block .header__container {
+    padding: 0px 80px;
+  }
+  .dable__block .header__container .block3 button {
+    font-size: 16px;
+    width: 250px;
+    margin-left: 10px;
+  }
+  .section__container {
+    padding: 0px 80px;
+  }
+  .aside__container {
+    padding: 0px 80px 141px 80px;
+  }
+  .sidebar__container {
+    padding: 0px 80px 93px 80px;
+  }
+}
 @media screen and (max-width: 1400px) {
   .container {
     max-width: 1320px;
@@ -665,6 +715,18 @@ body {
   }
   .footer__container details {
     width: 1100px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    max-width: 1000px;
+  }
+  .dable__block {
+    max-width: 1000px;
+    padding: 79.53px 0px 65px 0px;
+  }
+  .header__container {
+    padding: 0px 30px;
   }
 }
 @media screen and (max-width: 992px) {
