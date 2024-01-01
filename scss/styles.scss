@@ -34,6 +34,7 @@ body {
 }
 
 .header__container {
+    max-width: 360px;
     display: flex;
     padding: 0px 150px;
     align-items: center;
@@ -100,7 +101,7 @@ body {
     background-position: 23px 90px;
     display: flex;
     padding: 0px 150px;
-
+    max-width: 360px;
     h2 {
         color: #32333D;
         font-size: 70px;
@@ -174,9 +175,10 @@ body {
 
 .hero__container {
     padding: 81px 146px 65px 146px;
-
+    max-width: 360px;
     .block {
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
         cursor: pointer;
 
@@ -189,7 +191,7 @@ body {
     background-image: url(../img/aside__bg-img.svg), url(../img/aside__bg-img.svg), url(../img/aside__img_bg_2.svg);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 1450px 130px, 1450px 1140px, 250px 750px;
-
+    max-width: 360px;
     h2 {
         color: #32333D;
         font-size: 60px;
@@ -212,6 +214,7 @@ body {
     }
 
     .block {
+        flex-wrap: wrap;
         margin-top: 35px;
         display: flex;
         align-items: center;
@@ -244,7 +247,7 @@ body {
     flex-direction: column;
     padding: 0px 340px 93px 340px;
     justify-content: center;
-
+    max-width: 360px;
     h2 {
         display: flex;
         justify-content: center;
@@ -306,6 +309,7 @@ body {
     }
 
     p {
+
         color: #5B6574;
         font-size: 24px;
         font-style: normal;
@@ -332,6 +336,7 @@ body {
         }
 
         p {
+            gap: 20px;
             display: flex;
             align-items: center;
             width: 482px;
@@ -384,7 +389,7 @@ body {
     flex-direction: column;
     gap: 32px;
     padding: 0px 340px 81px;
-
+    max-width: 360px;
     h2 {
         margin-bottom: 25px;
         width: 626px;
@@ -414,6 +419,7 @@ body {
     }
 
     .content__btn {
+        flex-wrap: wrap;
         display: flex;
         gap: 17px;
     }
@@ -762,10 +768,10 @@ body {
 }
 @media screen and (max-width:1200px) {
     .container {
-        max-width: 1140px;
+        max-width: 1200px;
     }
     .dable__block {
-        max-width: 1140px;
+        max-width: 1200px;
     }
      .sidebar__container {
         img {
@@ -796,10 +802,10 @@ body {
 }
 @media screen and (max-width:1100px) {
     .container {
-        max-width: 1000px;
+        max-width: 1100px;
     }
     .dable__block {
-        max-width: 1000px;
+        max-width: 1100px;
         padding: 79.53px 0px 65px 0px;
     }
     .header__container {
@@ -809,10 +815,10 @@ body {
 }
 @media screen and (max-width:992px) {
     .container {
-        max-width: 960px;
+        max-width: 992px;
     }
     .dable__block {
-        max-width: 960px;
+        max-width: 992px;
     }
     .header__container {
         .nav ul {
@@ -870,12 +876,11 @@ body {
 }
 @media screen and (max-width:768px) {
     .container {
-        max-width: 720px;
+        max-width: 768px;
     }
     .dable__block {
         background-size: 700px 830px;
-        max-width: 720px;
-        position: relative;
+        max-width: 768px;
     }
     .header__container {
         .hamburger {
@@ -1001,10 +1006,10 @@ body {
 }
 @media screen and (max-width:576px) {
     .container {
-        max-width: 540px;
+        max-width: 576px;
     }
     .dable__block {
-        max-width: 540px;
+        max-width: 576px;
     }
     .header__container {
         .hamburger {
@@ -1036,19 +1041,30 @@ body {
     }
     .section__container {
         background-image: none;
+        h2 {
+            margin-top: 650px;
+            width: 400px;
+        }
+        p {
+            width: 400px;
+        }
+        .sectoin__button p {
+            width: 200px;
+        }
     }
     .hero__container {
         img {
-            width: 55px;
+            width: 45px;
         }
     }
     .aside__container {
         background-image: none;
         h2 {
+            width: 500px;
             font-size: 35px;
         }
         p {
-            width: 500px;
+            width: 400px;
             font-size: 15px;
         }
         .block {
@@ -1061,7 +1077,7 @@ body {
                 font-size: 12px;
             }
             img {
-                width: 200px;
+                width: 150px;
             }
         }
     }
@@ -1073,9 +1089,11 @@ body {
 
         }
         h2 {
+            width: 400px;
             font-size: 40px;
         }
         p {
+            width: 300px;
             font-size: 16px;
         }
         img {
@@ -1084,13 +1102,13 @@ body {
     }
     .widget__container {
         h2 {
-            width: 500px;
+            width: 450px;
             font-size: 35px;
             text-align: center;
         }
         p {
             text-align: center;
-            width: 500px;
+            width: 450px;
             font-size: 16px;
         }
         .cardf {
@@ -1099,27 +1117,34 @@ body {
     }
     .content__container {
         h2 {
+            width: 450px;
             font-size: 35px;
         }
         h3 {
+            width: 450px;
             font-size: 30px;
         }
         h4 {
+            width: 450px;
             font-size: 25px;
         }
         img {
-            width: 500px;
+            margin-left: -30px;
+            width: 450px;
             height: 300px;
         }
         button {
+            width: 100px;
             font-size: 10px;
         }
     }
     .page__conrtainer {
         h2 {
+            width: 500px;
             font-size: 35px;
         }
         p {
+            width: 500px;
             font-size: 18px;
         }
         .card1 {
@@ -1131,13 +1156,21 @@ body {
     } 
     .footer__container {
         h1 {
+            width: 500px;
             font-size: 40px;
         }
         p {
+            width: 500px;
             font-size: 18px;
         }
         details {
             width: 500px;
+        }
+        summary {
+            width: 400px;
+        }
+        p {
+            width: 450px;
         }
         .footer__part {
             flex-wrap: wrap;
@@ -1145,11 +1178,166 @@ body {
     }   
     
 }
-@media screen and (max-width:360px) {
+@media screen and (max-width:490px) {
     .container {
-        max-width: 320px;
+        max-width: 490px;
     }
     .dable__block {
-        max-width: 320px;
+        max-width: 490px;
+    }
+    .footer__container {
+        details {
+            width: 440px;
+        }
+    }
+}
+@media screen and (max-width:360px) {
+    .container {
+        max-width: 360px;
+    }
+    .dable__block {
+        max-width: 360px;
+        background-image: url(../img/bg--img_1.png);
+        background-size: 361.375px 307.21px;
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+    .header__container {
+        margin-top: -50px;
+        img {
+            margin-left: -50px;
+            width: 250px;
+            margin-right: 60px;
+        }
+        #chek:checked + nav {
+            top: 100px;
+            left: 180px;
+        }
+
+    }
+    .section__container {
+        h2 {
+            margin-top: 200px;
+            width: 300px;
+        }
+        p {
+            width: 300px;
+        }
+        .sectoin__button p {
+            width: 150px;
+        }
+    
+    }
+    .hero__container {
+        img {
+           width: 100px;
+        }
+    }
+    .aside__container {
+        max-width: 360px;
+        h2 {
+            width: 300px;
+            font-size: 20px;
+        }
+        p {
+            width: 300px;
+            font-size: 15px;
+        }
+        .block {
+            margin-top: 0px;
+            h4 {
+                width: 300px;
+                font-size: 20px;
+            }
+            p {
+                width: 300px;
+                font-size: 12px;
+            }
+            img {
+                width: 150px;
+            }
+        }
+    }
+    .aside__container {
+
+       .block .aside__img img {
+            width: 300px;
+        }
+    }
+    .sidebar__container {
+        max-width: 360px;
+        h2 {
+            width: 300px;
+        }
+        .sidebar__team-part {
+            grid-template-columns: repeat(1,1fr);
+            img {
+                margin-left: -50px;
+                width: 300px;
+            }
+        }
+    }
+    .widget__container {
+        max-width: 360px;
+        h2 {
+            width: 300px;
+        }
+        p {
+            width: 300px;
+        }
+        .cardf .block p {
+           gap: 20px;
+            width: 188px;
+        }
+    }
+    .content__container {
+        max-width: 360px;
+        h2 {
+            width: 300px;
+        }
+        h3 {
+            width: 300px;
+        }
+        h4 {
+            width: 300px;
+        }
+        button {
+            font-size: 10px;
+            flex-wrap: wrap;
+        }
+        img {
+            width: 300px;
+            height: 156px;
+        }
+    }
+    .page__conrtainer {
+        max-width: 360px;
+        h2 {
+            margin-left: 50px;
+            width: 300px;
+        }
+        p {
+            width: 300px;
+        }
+        .card1 img {
+            width: 300px;
+            height: 150px;
+        }
+    }
+    .footer__container {
+        max-width: 360px;
+        h1 {
+            width: 300px;
+            margin-left: 20px;
+        }
+        details {
+            width: 300px;
+        }
+        summary {
+            width: 300px;
+        }
+        p{
+            width: 300px;
+        }
     }
 }

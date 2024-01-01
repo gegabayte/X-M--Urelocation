@@ -34,6 +34,7 @@ body {
 }
 
 .header__container {
+  max-width: 360px;
   display: flex;
   padding: 0px 150px;
   align-items: center;
@@ -93,6 +94,7 @@ body {
   background-position: 23px 90px;
   display: flex;
   padding: 0px 150px;
+  max-width: 360px;
 }
 .section__container h2 {
   color: #32333D;
@@ -156,9 +158,11 @@ body {
 
 .hero__container {
   padding: 81px 146px 65px 146px;
+  max-width: 360px;
 }
 .hero__container .block {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   cursor: pointer;
 }
@@ -169,6 +173,7 @@ body {
   background-image: url(../img/aside__bg-img.svg), url(../img/aside__bg-img.svg), url(../img/aside__img_bg_2.svg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 1450px 130px, 1450px 1140px, 250px 750px;
+  max-width: 360px;
 }
 .aside__container h2 {
   color: #32333D;
@@ -190,6 +195,7 @@ body {
   margin-bottom: 54px;
 }
 .aside__container .block {
+  flex-wrap: wrap;
   margin-top: 35px;
   display: flex;
   align-items: center;
@@ -219,6 +225,7 @@ body {
   flex-direction: column;
   padding: 0px 340px 93px 340px;
   justify-content: center;
+  max-width: 360px;
 }
 .sidebar__container h2 {
   display: flex;
@@ -299,6 +306,7 @@ body {
   /* 110px */
 }
 .widget__container .block p {
+  gap: 20px;
   display: flex;
   align-items: center;
   width: 482px;
@@ -346,6 +354,7 @@ body {
   flex-direction: column;
   gap: 32px;
   padding: 0px 340px 81px;
+  max-width: 360px;
 }
 .content__container h2 {
   margin-bottom: 25px;
@@ -373,6 +382,7 @@ body {
   margin-bottom: 25px;
 }
 .content__container .content__btn {
+  flex-wrap: wrap;
   display: flex;
   gap: 17px;
 }
@@ -693,10 +703,10 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1200px;
   }
   .dable__block {
-    max-width: 1140px;
+    max-width: 1200px;
   }
   .sidebar__container img {
     width: 250px;
@@ -719,10 +729,10 @@ body {
 }
 @media screen and (max-width: 1100px) {
   .container {
-    max-width: 1000px;
+    max-width: 1100px;
   }
   .dable__block {
-    max-width: 1000px;
+    max-width: 1100px;
     padding: 79.53px 0px 65px 0px;
   }
   .header__container {
@@ -731,10 +741,10 @@ body {
 }
 @media screen and (max-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 992px;
   }
   .dable__block {
-    max-width: 960px;
+    max-width: 992px;
   }
   .header__container .nav ul {
     gap: 20px;
@@ -776,12 +786,11 @@ body {
 }
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 768px;
   }
   .dable__block {
     background-size: 700px 830px;
-    max-width: 720px;
-    position: relative;
+    max-width: 768px;
   }
   .header__container .hamburger {
     display: block;
@@ -889,10 +898,10 @@ body {
 }
 @media screen and (max-width: 576px) {
   .container {
-    max-width: 540px;
+    max-width: 576px;
   }
   .dable__block {
-    max-width: 540px;
+    max-width: 576px;
   }
   .header__container .hamburger {
     display: block;
@@ -923,17 +932,28 @@ body {
   .section__container {
     background-image: none;
   }
+  .section__container h2 {
+    margin-top: 650px;
+    width: 400px;
+  }
+  .section__container p {
+    width: 400px;
+  }
+  .section__container .sectoin__button p {
+    width: 200px;
+  }
   .hero__container img {
-    width: 55px;
+    width: 45px;
   }
   .aside__container {
     background-image: none;
   }
   .aside__container h2 {
+    width: 500px;
     font-size: 35px;
   }
   .aside__container p {
-    width: 500px;
+    width: 400px;
     font-size: 15px;
   }
   .aside__container .block {
@@ -947,7 +967,7 @@ body {
     font-size: 12px;
   }
   .aside__container .block img {
-    width: 200px;
+    width: 150px;
   }
   .sidebar__container .sidebar__team-part {
     grid-template-columns: repeat(2, 1fr);
@@ -955,47 +975,56 @@ body {
     margin-left: 40px;
   }
   .sidebar__container h2 {
+    width: 400px;
     font-size: 40px;
   }
   .sidebar__container p {
+    width: 300px;
     font-size: 16px;
   }
   .sidebar__container img {
     width: 150px;
   }
   .widget__container h2 {
-    width: 500px;
+    width: 450px;
     font-size: 35px;
     text-align: center;
   }
   .widget__container p {
     text-align: center;
-    width: 500px;
+    width: 450px;
     font-size: 16px;
   }
   .widget__container .cardf {
     flex-direction: column;
   }
   .content__container h2 {
+    width: 450px;
     font-size: 35px;
   }
   .content__container h3 {
+    width: 450px;
     font-size: 30px;
   }
   .content__container h4 {
+    width: 450px;
     font-size: 25px;
   }
   .content__container img {
-    width: 500px;
+    margin-left: -30px;
+    width: 450px;
     height: 300px;
   }
   .content__container button {
+    width: 100px;
     font-size: 10px;
   }
   .page__conrtainer h2 {
+    width: 500px;
     font-size: 35px;
   }
   .page__conrtainer p {
+    width: 500px;
     font-size: 18px;
   }
   .page__conrtainer .card1 img {
@@ -1003,23 +1032,175 @@ body {
     width: 500px;
   }
   .footer__container h1 {
+    width: 500px;
     font-size: 40px;
   }
   .footer__container p {
+    width: 500px;
     font-size: 18px;
   }
   .footer__container details {
     width: 500px;
   }
+  .footer__container summary {
+    width: 400px;
+  }
+  .footer__container p {
+    width: 450px;
+  }
   .footer__container .footer__part {
     flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 490px) {
   .container {
-    max-width: 320px;
+    max-width: 490px;
   }
   .dable__block {
-    max-width: 320px;
+    max-width: 490px;
+  }
+  .footer__container details {
+    width: 440px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .container {
+    max-width: 360px;
+  }
+  .dable__block {
+    max-width: 360px;
+    background-image: url(../img/bg--img_1.png);
+    background-size: 361.375px 307.21px;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  .header__container {
+    margin-top: -50px;
+  }
+  .header__container img {
+    margin-left: -50px;
+    width: 250px;
+    margin-right: 60px;
+  }
+  .header__container #chek:checked + nav {
+    top: 100px;
+    left: 180px;
+  }
+  .section__container h2 {
+    margin-top: 200px;
+    width: 300px;
+  }
+  .section__container p {
+    width: 300px;
+  }
+  .section__container .sectoin__button p {
+    width: 150px;
+  }
+  .hero__container img {
+    width: 100px;
+  }
+  .aside__container {
+    max-width: 360px;
+  }
+  .aside__container h2 {
+    width: 300px;
+    font-size: 20px;
+  }
+  .aside__container p {
+    width: 300px;
+    font-size: 15px;
+  }
+  .aside__container .block {
+    margin-top: 0px;
+  }
+  .aside__container .block h4 {
+    width: 300px;
+    font-size: 20px;
+  }
+  .aside__container .block p {
+    width: 300px;
+    font-size: 12px;
+  }
+  .aside__container .block img {
+    width: 150px;
+  }
+  .aside__container .block .aside__img img {
+    width: 300px;
+  }
+  .sidebar__container {
+    max-width: 360px;
+  }
+  .sidebar__container h2 {
+    width: 300px;
+  }
+  .sidebar__container .sidebar__team-part {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sidebar__container .sidebar__team-part img {
+    margin-left: -50px;
+    width: 300px;
+  }
+  .widget__container {
+    max-width: 360px;
+  }
+  .widget__container h2 {
+    width: 300px;
+  }
+  .widget__container p {
+    width: 300px;
+  }
+  .widget__container .cardf .block p {
+    gap: 20px;
+    width: 188px;
+  }
+  .content__container {
+    max-width: 360px;
+  }
+  .content__container h2 {
+    width: 300px;
+  }
+  .content__container h3 {
+    width: 300px;
+  }
+  .content__container h4 {
+    width: 300px;
+  }
+  .content__container button {
+    font-size: 10px;
+    flex-wrap: wrap;
+  }
+  .content__container img {
+    width: 300px;
+    height: 156px;
+  }
+  .page__conrtainer {
+    max-width: 360px;
+  }
+  .page__conrtainer h2 {
+    margin-left: 50px;
+    width: 300px;
+  }
+  .page__conrtainer p {
+    width: 300px;
+  }
+  .page__conrtainer .card1 img {
+    width: 300px;
+    height: 150px;
+  }
+  .footer__container {
+    max-width: 360px;
+  }
+  .footer__container h1 {
+    width: 300px;
+    margin-left: 20px;
+  }
+  .footer__container details {
+    width: 300px;
+  }
+  .footer__container summary {
+    width: 300px;
+  }
+  .footer__container p {
+    width: 300px;
   }
 }/*# sourceMappingURL=styles.css.map */
