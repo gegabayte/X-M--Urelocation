@@ -34,7 +34,6 @@ body {
 }
 
 .header__container {
-  max-width: 360px;
   display: flex;
   padding: 0px 150px;
   align-items: center;
@@ -94,7 +93,6 @@ body {
   background-position: 23px 90px;
   display: flex;
   padding: 0px 150px;
-  max-width: 360px;
 }
 .section__container h2 {
   color: #32333D;
@@ -158,7 +156,6 @@ body {
 
 .hero__container {
   padding: 81px 146px 65px 146px;
-  max-width: 360px;
 }
 .hero__container .block {
   display: flex;
@@ -173,7 +170,6 @@ body {
   background-image: url(../img/aside__bg-img.svg), url(../img/aside__bg-img.svg), url(../img/aside__img_bg_2.svg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 1450px 130px, 1450px 1140px, 250px 750px;
-  max-width: 360px;
 }
 .aside__container h2 {
   color: #32333D;
@@ -225,7 +221,6 @@ body {
   flex-direction: column;
   padding: 0px 340px 93px 340px;
   justify-content: center;
-  max-width: 360px;
 }
 .sidebar__container h2 {
   display: flex;
@@ -354,7 +349,6 @@ body {
   flex-direction: column;
   gap: 32px;
   padding: 0px 340px 81px;
-  max-width: 360px;
 }
 .content__container h2 {
   margin-bottom: 25px;
@@ -616,10 +610,10 @@ body {
 
 @media screen and (max-width: 1690px) {
   .container {
-    max-width: 1590px;
+    max-width: 1690px;
   }
   .dable__block {
-    max-width: 1590px;
+    max-width: 1690px;
     padding: 79.53px 100px 65px 100px;
   }
   .sidebar__container {
